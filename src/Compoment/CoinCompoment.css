@@ -36,7 +36,7 @@
 }
 .CoinCompoment .CoinContainer:hover {
     background-color: white;
-    box-shadow: 0 0 12px white;
+    box-shadow: 0 0 13px white;
 }
 .CoinCompoment .CoinContainer .Row {
     position:relative;
