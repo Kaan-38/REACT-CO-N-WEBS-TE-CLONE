@@ -11,15 +11,22 @@ import { useEffect } from 'react';
 const CoinCompoment = ( { name, image, price, price_change, id } ) => {
     const {data, search, active, setİconActive, iconActive, setCount, count} = useContext(MainContext)
     
-    
     const [activee, setActivee] = useState(false)
     const click = () =>{
         setActivee(!activee)
     }
 
-    
-   
-    
+    useEffect(() => {
+      const CoinContainer = document.querySelectorAll('.CoinContainer')
+  
+      function active_class_compomentCoin(){
+        CoinContainer.forEach((item) => 
+        item.classList.remove('active'))
+        this.classList.add('active')
+     }
+     CoinContainer.forEach((item) => 
+     item.addEventListener('click', active_class_compomentCoin))
+     },[])
 
   return (
         

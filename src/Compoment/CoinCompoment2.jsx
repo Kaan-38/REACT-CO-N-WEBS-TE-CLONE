@@ -9,8 +9,8 @@ const CoinCompoment2 = () => {
  
   return (
     <div className={`CoinCompoment2 ${active == 'CoinCompoment2Active' ? 'active' : ''} `} >
-           {data.filter(coin => coin.name.toUpperCase().includes(search)).map((coin) => (
-            <div className='CoinCompoment2Container'>
+           {data.filter(coin => coin.name.toUpperCase().includes(search)).map((coin, idx) => (
+            <div className='CoinCompoment2Container' key={idx}>
                {
                   skeletonloading === false ? (
                        <>

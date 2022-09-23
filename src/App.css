@@ -24,7 +24,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 12px;
+ 
 }
 .ContainerKapsam {
   position: relative;
@@ -33,7 +33,8 @@ body {
   background-color:#477ac4;
   box-shadow: 0 0 12px white;
   border-radius: 8px;
- overflow: hidden;
+  overflow: hidden;
+  margin-top: 12px;
 }
 
 .SearchInput {

@@ -106,7 +106,7 @@ return (
 
                     <div className={`CoinCompoment ${active == 'CoinCompoment1Active' ? 'active' : ''} `} >
                        {
-                        data.filter(coin => coin.name.toUpperCase().includes(search)).map((coin) => (
+                        data.filter(coin => coin.name.toUpperCase().includes(search)).map((coin,idx)  => (
                            <CoinCompoment
                             name={coin.name} 
                             image={coin.image} 
