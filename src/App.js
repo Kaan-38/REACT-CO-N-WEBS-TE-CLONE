@@ -113,7 +113,7 @@ return (
                             price={coin.current_price}
                             price_change={coin.price_change_percentage_24h}
                             id={coin.symbol}
-
+                            key={idx}
                             />
                         ))
                        }
